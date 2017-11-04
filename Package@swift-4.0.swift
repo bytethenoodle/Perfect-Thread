@@ -25,7 +25,7 @@ let package = Package(name: "PerfectThread",
                       products: [
                         .library(name: "PerfectThread", targets: ["PerfectThread"])],
                       dependencies: [
-                        .package(url: "https://github.com/PerfectlySoft/Perfect-LinuxBridge.git", .exact("3.0.0"))],
+                        .package(url: "https://github.com/PerfectlySoft/Perfect-LinuxBridge.git", .upToNextMajor(from: "3.0.0"))],
                       targets: [
                         .target(name: "PerfectThread", dependencies: ["LinuxBridge"])])
 #else
